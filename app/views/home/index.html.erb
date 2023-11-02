@@ -22,7 +22,7 @@
 		</div>
 	</div> 
 </div>
-
+<br>
 <div data-controller="toggle" data-toggle-change-class="hidden">
 	<span data-action="click->toggle#toggle"
 				data-toggle-target="content"
@@ -34,10 +34,18 @@
 		<li>Item 6</li>
 	</ul>
 </div>
-
+<br>
 <div data-controller="toggle" data-toggle-change-class="dropbtn">
 	<div data-toggle-target="content">
 		<input type="checkbox" data-action="click->toggle#toggle" name="checkbox_toggle">
 		<label for="checkbox_toggle">Click me to show a green box.</label>
 	<div>
+</div>
+<br>
+<div data-controller="text">
+	<textarea 
+		data-text-target="textarea"
+		data-action="input->text#count" cols="45" rows="7" placeholder="Write here your tweet."></textarea>
+	<p data-text-target="characters"></p>
+	<p data-text-target="notice"></p>
 </div>
