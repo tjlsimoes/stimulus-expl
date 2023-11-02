@@ -6,7 +6,7 @@ export default class extends Controller {
 	static classes = [ "change" ]
 
   toggle() {
-	  this.contentTarget.classList.toggle(this.changeClass)
-    // this.contentTargets.map((t) => t.classList.toggle(this.changeClass))
+	  // this.contentTarget.classList.toggle(this.changeClass)
+    this.contentTargets.map((t) => t.classList.toggle(this.changeClass))
   }
 }

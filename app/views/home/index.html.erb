@@ -21,4 +21,16 @@
 			<a href="#">Link 3</a>
 		</div>
 	</div> 
-<div>
+</div>
+
+<div data-controller="toggle" data-toggle-change-class="hidden">
+	<span data-action="click->toggle#toggle"
+				data-toggle-target="content"
+				>Click me to show a list instead of this.</span>
+	<ul data-action="click->toggle#toggle"
+			class="hidden" data-toggle-target="content">
+		<li>Item 4</li>
+		<li>Item 5</li>
+		<li>Item 6</li>
+	</ul>
+</div>
