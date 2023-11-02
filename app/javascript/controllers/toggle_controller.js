@@ -7,5 +7,6 @@ export default class extends Controller {
 
   toggle() {
 	  this.contentTarget.classList.toggle(this.changeClass)
+    // this.contentTargets.map((t) => t.classList.toggle(this.changeClass))
   }
 }

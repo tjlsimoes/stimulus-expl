@@ -10,3 +10,15 @@
 		<li>Item 3</li>
 	</ul>
 </div>
+
+<div data-controller="toggle" data-toggle-change-class="hidden">
+	<span data-action="click->toggle#toggle">Click me to show a dropdown button.</span>
+	<div class="dropdown hidden" data-toggle-target="content">
+  	<button class="dropbtn">Dropdown</button>
+		<div class="dropdown-content">
+			<a href="#">Link 1</a>
+			<a href="#">Link 2</a>
+			<a href="#">Link 3</a>
+		</div>
+	</div> 
+<div>
